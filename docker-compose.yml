@@ -1,0 +1,44 @@
+version: "3.5"
+
+services:
+  vue-client:
+    container_name: 'tito-codes-client'
+    build: frontend
+    networks: 
+      - backend
+    depends_on: 
+      - express-server
+    ports:
+      - "8080:80"
+
+  mongo-db:
+    image: mongo
+    hostname: 'mongo-db'
+    ports: 
+      - 27017:27017
+    restart: always
+    volumes:
+      - /Volumes/Macintosh HD/data/portfolio:/data/db
+    networks: 
+      - backend
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongo mongo-db:27017/test --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+  
+  express-server:
+    build: server
+    command: npm run dev
+    ports:
+      - "8081:8081"
+    networks: 
+      - backend
+    depends_on: 
+      - mongo-db
+
+networks: 
+  backend:
+    driver: bridge
+
