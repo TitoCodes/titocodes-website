@@ -2,16 +2,22 @@
   <div id="app">
     <b-navbar>
       <template slot="start">
-        <b-navbar-item tag="router-link" to="/">Home</b-navbar-item>
-        <b-navbar-item href="#">Projects</b-navbar-item>
+        <b-navbar-item tag="router-link" to="/">
+          <img src="./assets/main-logo.png" />
+        </b-navbar-item>
+        <!-- <b-navbar-item href="#">Projects</b-navbar-item> -->
         <b-navbar-item tag="router-link" to="/about">About</b-navbar-item>
-        <b-navbar-dropdown label="Developer Links">
-          <b-navbar-item target="_blank" href="https://github.com/TitoCodes">Github</b-navbar-item>
-        </b-navbar-dropdown>
       </template>
     </b-navbar>
 
-    <router-view></router-view>
+    <router-view class="dark-purple"></router-view>
+    <footer class="footer">
+      <div>
+        <p>
+          <span>© {{ new Date().getFullYear() }} TitoCodes</span>
+        </p>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -29,13 +35,31 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import "./scss/global.scss";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+img {
+  width: auto;
+  height: auto;
+}
+.dark-purple {
+  background-color: $dark-purple;
+}
+.navbar-burger {
+  color: $green !important;
+}
+.navbar-menu {
+  background: $dark-purple;
+}
+.navbar-item,
+.navbar-menu.is-active {
+  background-color: $dark-purple !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 </style>

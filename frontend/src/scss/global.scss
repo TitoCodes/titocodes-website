@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
+
+code { font-family: 'Fira Code', monospace; }
+ 
+@supports (font-variation-settings: normal) {
+  code { font-family: 'Fira Code VF', monospace; }
+}
+
+// Set your brand colors
+$purple: #8A4D76;
+$green: #50FA8B;
+$orange: #FFB847;
+$darker-orange:#FF6600;
+$dark-purple : #44475B;
+$darker-purple : #282A40;
+
+// Update Bulma's global variables
+$family-sans-serif: "Fira Code VF", monospace;
+
+// Update some of Bulma's component variables
+$navbar-background-color:$dark-purple;
+$navbar-item-color:$green;
+$navbar-dropdown-item-active-background-color:$dark-purple;
+$navbar-divider-background-color:$dark-purple;
+$navbar-burger-color:$green;
+$navbar-dropdown-background-color:$orange;
+$navbar-item-hover-background-color:$dark-purple;
+$navbar-item-hover-color:$orange;
+$navbar-dropdown-arrow:$green;
+$navbar-dropdown-item-hover-color:$orange;
+$navbar-tab-active-background-color :$dark-purple;
+$footer-background-color:$dark-purple;
+$footer-color:$green;
+
+$title-color: $green;
+$subtitle-color:$green;
+
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/base/_all.sass";
+@import "../../node_modules/bulma/bulma.sass";
+@import "../../node_modules/buefy/src/scss/buefy.scss";
