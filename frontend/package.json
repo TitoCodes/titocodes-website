@@ -11,6 +11,7 @@
     "buefy": "^0.9.2",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
+    "vue-analytics": "^5.22.1",
     "vue-router": "^3.4.2"
   },
   "devDependencies": {
