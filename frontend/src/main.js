@@ -4,47 +4,26 @@ import Home from "./pages/Home.vue";
 import About from "./pages/About.vue";
 import App from "./App.vue";
 import Beufy from "buefy";
-import "buefy/dist/buefy.css";
+import Meta from 'vue-meta';
 import VueGtag from "vue-gtag";
+import "buefy/dist/buefy.css";
 
 Vue.config.productionTip = false;
+Vue.prototype.$website_name = 'TitoCodes';
+Vue.prototype.$website_address = 'https://www.titocodes.com';
+
 Vue.use(Beufy);
 Vue.use(VueRouter);
+Vue.use(Meta);
 
 const routes = [
   {
     path: "/",
-    component: Home,
-    meta: {
-      title: "Home - TitoCodes",
-      metaTags: [
-        {
-          name: "description",
-          content: "The home page of TitoCodes.",
-        },
-        {
-          property: "og:description",
-          content: "The home page of TitoCodes.",
-        },
-      ],
-    },
+    component: Home
   },
   {
     path: "/about",
-    component: About,
-    meta: {
-      title: "About - TitoCodes",
-      metaTags: [
-        {
-          name: "description",
-          content: "The about page of TitoCodes.",
-        },
-        {
-          property: "og:description",
-          content: "The about page of TitoCodes.",
-        },
-      ],
-    },
+    component: About
   },
 ];
 
