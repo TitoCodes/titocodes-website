@@ -5,7 +5,7 @@ import About from "./pages/About.vue";
 import App from "./App.vue";
 import Beufy from "buefy";
 import "buefy/dist/buefy.css";
-import VueAnalytics from "vue-analytics";
+import VueGtag from "vue-gtag";
 
 Vue.config.productionTip = false;
 Vue.use(Beufy);
@@ -52,13 +52,14 @@ const router = new VueRouter({
   routes,
 });
 
-if (process.env.NODE_ENV === "production") {
-  console.log('google analytics');
-  Vue.use(VueAnalytics, {
-    id: 'UA-176067766-1',
-    VueRouter,
-  });
-}
+Vue.use(VueGtag, {
+  config: {
+    id: "UA-176067766-1",
+    params: {
+      send_page_view: process.env.NODE_ENV === "production",
+    },
+  },
+});
 
 new Vue({
   router,
