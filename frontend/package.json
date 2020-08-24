@@ -12,6 +12,7 @@
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-gtag": "^1.8.0",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.4.2"
   },
   "devDependencies": {

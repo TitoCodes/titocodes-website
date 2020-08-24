@@ -19,3 +19,4 @@ Also, this is the way to show that aside from the microsoft stack, I know the fo
  - Buefy
  - Vue-router
  - GoogleAnalytics
+ - SEO
