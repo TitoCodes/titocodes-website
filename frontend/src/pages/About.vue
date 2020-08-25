@@ -55,9 +55,13 @@ export default {
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-         { name: "description", content: aboutDescription },
+        { name: "description", content: aboutDescription },
+        { property: "og:description", content: aboutDescription },
         { property: "og:title", content: `About Page- ${this.$website_name}` },
-        { property: "og:site_name", content: `About Page- ${this.$website_name}` },
+        {
+          property: "og:site_name",
+          content: `About Page- ${this.$website_name}`,
+        },
         { property: "og:type", content: "website" },
         {
           property: "og:url",
@@ -104,5 +108,9 @@ strong,
 }
 li {
   color: $orange;
+}
+
+.hero-body{
+  padding-bottom: 3rem;
 }
 </style>

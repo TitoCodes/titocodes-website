@@ -3,7 +3,7 @@
     <section class="hero is-fullheight">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title is-size-1">Your friendly tito programmer;</h1>
+          <h1 class="title is-size-1">{{title}}</h1>
           <br />
           <div class="subtitle is-size-5">
             Clone the featured projects from
@@ -49,6 +49,11 @@ const imagePath = "http://www.titocodes.com/img/main-logo.687a6f89.png";
 
 export default {
   name: "Home",
+  data: function () {
+    return {
+      title: homeDescription + ";",
+    };
+  },
   metaInfo: function () {
     return {
       title: `Home Page - ${this.$website_name}`,
@@ -58,6 +63,7 @@ export default {
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "description", content: homeDescription },
         { property: "og:title", content: `Home Page - ${this.$website_name}` },
+        { property: "og:description", content: homeDescription },
         {
           property: "og:site_name",
           content: `Home Page - ${this.$website_name}`,
