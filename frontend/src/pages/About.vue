@@ -44,7 +44,7 @@
 
 <script>
 const aboutDescription = "Know your tito.";
-const imagePath = "http://localhost:8082/img/main-logo.687a6f89.png";
+const imagePath = "http://www.titocodes.com/img/main-logo.687a6f89.png";
 
 export default {
   name: "About",
@@ -55,6 +55,7 @@ export default {
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
+         { name: "description", content: aboutDescription },
         { property: "og:title", content: `About Page- ${this.$website_name}` },
         { property: "og:site_name", content: `About Page- ${this.$website_name}` },
         { property: "og:type", content: "website" },
