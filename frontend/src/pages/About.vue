@@ -1,42 +1,44 @@
 <template>
   <div>
-    <section class="hero is-fullheight">
+    <section class="hero is-fluid is-fullheight">
       <div class="hero-body">
-        <div class="container is-size-1">
-          Hello World! My name is Reb and I run
-          <strong>TitoCodes</strong>.
+        <div class="container">
+          <div class="is-size-2">
+            Hello World! My name is Reb and I run
+            <strong>TitoCodes</strong>.
+          </div>
+          <br />
+          <h3>
+            <strong class="is-size-3">When I'm not</strong>
+          </h3>
+          <div>
+            <ul>
+              <li>- Estimating effort for client project proposals.</li>
+              <li>- (again) Estimating for cost estimates for client project proposals.</li>
+              <li>- Implementing new features.</li>
+              <li>- Bug fixing.</li>
+              <li>- Drafting solution architecture for projects.</li>
+              <li>- Communicating with clients and trying to understand what they want.</li>
+            </ul>
+            <br />
+            <h3>
+              <strong class="is-size-3">I'm probably</strong>
+            </h3>
+
+            <ul>
+              <li>- Live streaming about programming.</li>
+              <li>- Trying new web frameworks.</li>
+              <li>- Doing photography.</li>
+              <li>- Looking if my e-mail has new breaches.</li>
+              <li>- Practicing Videography</li>
+              <li>- Watching interesting series, thought provoking movies and coding tutorials.</li>
+              <li>- Reading self-help books.</li>
+              <li>- Training my dog named "Docker" ( He has an instagram).</li>
+              <li>- Playing Nintendo switch, PC "Master Race" games</li>
+              <li>- Dabbing into front-end frameworks and javascript development.</li>
+            </ul>
+          </div>
         </div>
-      </div>
-
-      <h3>
-        <strong class="is-size-3">When I'm not</strong>
-      </h3>
-      <div>
-        <ul>
-          <li>Estimating effort for client project proposals.</li>
-          <li>(again) Estimating for cost estimates for client project proposals.</li>
-          <li>Implementing new features.</li>
-          <li>Bug fixing.</li>
-          <li>Drafting solution architecture for projects.</li>
-          <li>Communicating with clients and trying to understand what they want.</li>
-        </ul>
-        <br />
-        <h3>
-          <strong class="is-size-3">I'm probably</strong>
-        </h3>
-
-        <ul>
-          <li>Live streaming about programming.</li>
-          <li>Trying new web frameworks.</li>
-          <li>Doing photography.</li>
-          <li>Looking if my e-mail has new breaches.</li>
-          <li>Practicing Videography</li>
-          <li>Watching interesting series, thought provoking movies and coding tutorials.</li>
-          <li>Reading self-help books.</li>
-          <li>Training my dog named "Docker" ( He has an instagram).</li>
-          <li>Playing Nintendo switch, PC "Master Race" games</li>
-          <li>Dabbing into front-end frameworks and javascript development.</li>
-        </ul>
       </div>
     </section>
   </div>
@@ -94,7 +96,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
 @import "../scss/global.scss";
 
 h1,
@@ -108,9 +110,5 @@ strong,
 }
 li {
   color: $orange;
-}
-
-.hero-body{
-  padding-bottom: 3rem;
 }
 </style>
