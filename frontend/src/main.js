@@ -1,29 +1,36 @@
 import Vue from "vue";
+import Buefy from "buefy";
 import VueRouter from "vue-router";
 import Home from "./pages/Home.vue";
 import About from "./pages/About.vue";
+import Project from "./pages/Project.vue";
 import App from "./App.vue";
-import Beufy from "buefy";
-import Meta from 'vue-meta';
+import Meta from "vue-meta";
 import VueGtag from "vue-gtag";
-import "buefy/dist/buefy.css";
+import "./scss/global.scss";
 
 Vue.config.productionTip = false;
-Vue.prototype.$website_name = 'TitoCodes';
-Vue.prototype.$website_address = 'https://www.titocodes.com';
+Vue.prototype.$website_name = "TitoCodes";
+Vue.prototype.$website_address = "https://www.titocodes.com";
 
-Vue.use(Beufy);
+Vue.use(Buefy, {
+  defaultIconPack: 'fas',
+});
 Vue.use(VueRouter);
 Vue.use(Meta);
 
 const routes = [
   {
     path: "/",
-    component: Home
+    component: Home,
+  },
+  {
+    path: "/projects",
+    component: Project,
   },
   {
     path: "/about",
-    component: About
+    component: About,
   },
 ];
 
