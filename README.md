@@ -4,10 +4,9 @@
 
 ## Description
 
-I created this project first to have my own website, it's kind of weird that a developer doesn't have his/her own website right?
-Also, this is the way to show that aside from the microsoft stack, I know the following technologies listed below.
+The home of TitoCodes!
 
-### Technologies:
+### Technology & Libraries:
 
  - Node.js
  - Express.js
@@ -18,5 +17,7 @@ Also, this is the way to show that aside from the microsoft stack, I know the fo
  - NGINX
  - Buefy
  - Vue-router
+ - Vue-GTag
+ - Vue-Meta
  - GoogleAnalytics
  - SEO
