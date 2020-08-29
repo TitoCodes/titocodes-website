@@ -1,6 +1,6 @@
 # TitoCodes Website
 
-## <span style="color:red;">** Site Under Construction</span>
+Visit the site here: https://www.titocodes.com
 
 ## Description
 
