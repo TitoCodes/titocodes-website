@@ -127,21 +127,21 @@ export default {
 @import '../scss/global.scss';
 
 a {
-  color: $orange
+  color: $orange;
 }
 
 a:hover {
-  color: $darker-orange
+  color: $darker-orange;
 }
 
 .has-twitch-color{
-  color:#6441A4
+  color:#6441A4;
 }
 
 .has-facebook-color{
-  color:#4267B2
+  color:#4267B2;
 }
 .has-yt-color{
-  color:#FF0000
+  color:#FF0000;
 }
 </style>

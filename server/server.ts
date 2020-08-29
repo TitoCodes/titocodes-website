@@ -12,7 +12,6 @@ app.use(helmet());
 app.use(morgan("tiny"));
 app.use(cors());
 app.use(express.json());
-app.use(express.static("./public"));
 
 app.post("/project", async (req, res) => {
   let project = req.body;
@@ -90,7 +89,7 @@ app.get("/project", async (req, res) => {
   let projectList = await projects.find({}).finally(() => {
     db.close();
   });
-
+  console.log(projectList);
   res.json({
     projectList,
   });
@@ -117,6 +116,8 @@ app.post("/landing/about", (req, res) => {
 app.post("/landing/home", (req, res) => {
   // TODO: Updating the home page
 });
+
+app.use(express.static("./public"));
 
 const port = process.env.PORT || 8081;
 

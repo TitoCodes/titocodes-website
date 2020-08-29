@@ -45,49 +45,49 @@
 </template>
 
 <script>
-const aboutDescription = "Know your tito.";
-const imagePath = "http://www.titocodes.com/img/main-logo.687a6f89.png";
+const aboutDescription = 'Know your tito.';
+const imagePath = 'http://www.titocodes.com/img/main-logo.687a6f89.png';
 
 export default {
-  name: "About",
+  name: 'bout',
   metaInfo: function () {
     return {
       title: `About Page - ${this.$website_name}`,
-      link: [{ rel: "canonical", href: this.$website_address }],
+      link: [{ rel: 'canonical', href: this.$website_address }],
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "description", content: aboutDescription },
-        { property: "og:description", content: aboutDescription },
-        { property: "og:title", content: `About Page- ${this.$website_name}` },
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: aboutDescription },
+        { property: 'og:description', content: aboutDescription },
+        { property: 'og:title', content: `About Page- ${this.$website_name}` },
         {
-          property: "og:site_name",
+          property: 'og:site_name',
           content: `About Page- ${this.$website_name}`,
         },
-        { property: "og:type", content: "website" },
+        { property: 'og:type', content: 'website' },
         {
-          property: "og:url",
+          property: 'og:url',
           content: this.$website_address,
         },
         {
-          property: "og:image",
+          property: 'og:image',
           content: imagePath,
         },
-        { property: "og:description", content: aboutDescription },
-        { name: "twitter:card", content: "summary" },
+        { property: 'og:description', content: aboutDescription },
+        { name: 'twitter:card', content: 'summary' },
         {
-          name: "twitter:site",
+          name: 'twitter:site',
           content: this.$website_address,
         },
-        { name: "twitter:title", content: `About Page- ${this.$website_name}` },
+        { name: 'twitter:title', content: `About Page- ${this.$website_name}` },
         {
-          name: "twitter:description",
+          name: 'twitter:description',
           content: aboutDescription,
         },
-        { itemprop: "name", content: `About Page- ${this.$website_name}` },
-        { itemprop: "description", content: aboutDescription },
+        { itemprop: 'name', content: `About Page- ${this.$website_name}` },
+        { itemprop: 'description', content: aboutDescription },
         {
-          itemprop: "image",
+          itemprop: 'image',
           content: imagePath,
         },
       ],
@@ -97,7 +97,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-@import "../scss/global.scss";
+@import '../scss/global.scss';
 
 h1,
 h2,
