@@ -49,7 +49,7 @@ const aboutDescription = 'Know your tito.';
 const imagePath = 'http://www.titocodes.com/img/main-logo.687a6f89.png';
 
 export default {
-  name: 'bout',
+  name: 'About',
   metaInfo: function () {
     return {
       title: `About Page - ${this.$website_name}`,

@@ -7,6 +7,7 @@
         </b-navbar-item>
         <!-- <b-navbar-item tag="router-link" to="/projects">Projects</b-navbar-item> -->
         <b-navbar-item tag="router-link" to="/about">About</b-navbar-item>
+        <b-navbar-item tag="router-link" to="/privacy-policy">Privacy</b-navbar-item>
       </template>
     </b-navbar>
 

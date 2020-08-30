@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from './pages/Home.vue'
 import About from './pages/About.vue'
 import Project from './pages/Project.vue'
+import Privacy from './pages/Privacy.vue'
 import App from './App.vue'
 import Meta from 'vue-meta'
 import VueGtag from 'vue-gtag'
@@ -31,6 +32,10 @@ const routes = [
   {
     path: '/about',
     component: About,
+  },
+  {
+    path: '/privacy-policy',
+    component: Privacy,
   },
 ]
 
