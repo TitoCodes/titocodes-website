@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tito-codes-client
+  name: tito-codes-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tito-codes-client
+  strategy: {}
+  template:
+    metadata:
+
+      labels:
+        app: tito-codes-client
+    spec:
+      containers:
+      - image: localhost:5000/tito-codes-client:latest
+        name: tito-codes-client
+        imagePullPolicy: Always
+        resources: {}
+        ports:
+          - containerPort: 80
+            protocol: TCP
+status: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tito-codes-server
+  name: tito-codes-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tito-codes-server
+  strategy: {}
+  template:
+    metadata:
+
+      labels:
+        app: tito-codes-server
+    spec:
+      containers:
+      - image: localhost:5000/tito-codes-server:latest
+        env:
+          - name: MONGODB_CONNECTION_STRING
+            valueFrom:
+              secretKeyRef:
+                name: app-secrets
+                key: MONGODB_CONNECTION_STRING
+        name: tito-codes-server
+        imagePullPolicy: Always
+        resources: {}
+        ports:
+          - containerPort: 80
+            protocol: TCP
+status: {}

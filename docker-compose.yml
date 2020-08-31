@@ -2,6 +2,7 @@ version: "3.5"
 
 services:
   vue-client:
+    image: 'tito-codes-client'
     container_name: 'tito-codes-client'
     build: frontend
     networks: 
@@ -13,7 +14,7 @@ services:
 
   mongo-db:
     image: mongo
-    hostname: 'mongo-db'
+    container_name: 'tito-codes-db'
     ports: 
       - 27017:27017
     restart: always
@@ -29,8 +30,10 @@ services:
       start_period: 40s
   
   express-server:
+    image: 'tito-codes-server'
+    container_name: 'tito-codes-server'
     build: server
-    command: npm run dev
+    command: npm run start
     ports:
       - "8081:8081"
     networks: 

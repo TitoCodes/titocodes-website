@@ -1,12 +1,12 @@
-FROM node:alpine3.12
+FROM node:lts-alpine
 
 WORKDIR /server
-COPY package.json /server
+COPY package.json ./
 
 RUN npm install
 
-COPY . /server
+COPY . .
 
 EXPOSE 8081
 
-CMD [ "npm", "run start" ]
+ENTRYPOINT npm run start
