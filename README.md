@@ -6,18 +6,40 @@ Visit the site here: https://www.titocodes.com
 
 The home of TitoCodes!
 
-### Technology & Libraries:
+### Technologies used
 
- - Node.js
- - Express.js
+#### Frontend
  - Vue.js
- - MongoDB
- - Docker
  - SASS
- - NGINX
  - Buefy
  - Vue-router
  - Vue-GTag
  - Vue-Meta
+  
+#### Backend
+ - Node.js
+ - Express.js
+ - Nodemon
+ - Monk
+ - Helmet
+ - Morgan
+ 
+#### Database
+ - MongoDB
+
+#### Infrastracture
+ - Kubernetes
+ - Docker
+ - Minikube
+ - NGINX
+
+#### Hosting
+ - Azure
+  
+#### Repositories
+ - Docker Hub
+ - Github 
+
+#### Others
  - GoogleAnalytics
  - SEO
