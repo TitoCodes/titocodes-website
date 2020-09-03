@@ -2,6 +2,7 @@ import * as express from "express";
 import * as cors from "cors";
 import * as morgan from "morgan";
 import * as helmet from "helmet";
+import * as jwt from "jsonwebtoken";
 import monk from "monk";
 
 const db = monk(process.env.MONGODB_CONNECTION_STRING);
