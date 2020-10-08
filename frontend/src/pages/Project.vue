@@ -4,11 +4,12 @@
       <div class="hero-body">
         <div class="container">
           <div class="title is-size-1">Projects we had so far!</div>
-          <b-table
-            class="table-container"
-            :data="data"
-            :columns="columns"
-          ></b-table>
+          <b-table class="table-container" :data="data" :columns="columns"
+            ><b-loading
+              :is-full-page="false"
+              v-model="isProjectDataEmpty"
+            ></b-loading>
+          </b-table>
         </div>
       </div>
     </section>
@@ -25,6 +26,7 @@ export default {
   name: "Project",
   data() {
     return {
+      isProjectDataEmpty: true,
       data: [],
       columns: [
         {
@@ -38,6 +40,7 @@ export default {
         {
           field: "url",
           label: "Link",
+          cellClass: "table-link",
         },
       ],
     };
@@ -53,10 +56,11 @@ export default {
               let refinedProject = {
                 name: project.name,
                 description: project.description,
-                url: project.html_url,
+                url: `<a href="${project.html_url}" target="_blank">${project.html_url}</a>`,
               };
               this.data.push(refinedProject);
             });
+            this.isProjectDataEmpty = false;
           }
         })
         .catch((error) => {
@@ -113,11 +117,14 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang='scss'>
 @import "../scss/global.scss";
 
-.table-wrapper {
-  background-color: $dark-purple;
-  color: $green;
+a {
+  color: $orange;
+}
+
+a:hover {
+  color: $darker-orange;
 }
 </style>
