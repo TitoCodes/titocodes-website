@@ -117,14 +117,14 @@ export default {
 };
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 @import "../scss/global.scss";
 
-a {
+::v-deep a {
   color: $orange;
 }
 
-a:hover {
+::v-deep a:hover {
   color: $darker-orange;
 }
 </style>
