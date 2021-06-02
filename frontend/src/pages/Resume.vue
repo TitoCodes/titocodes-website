@@ -4,7 +4,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="is-size-2">
-            Resume<strong>Coming soon!</strong>
+            Resume <strong>Coming soon!</strong>
           </div>
           <br />
         </div>
