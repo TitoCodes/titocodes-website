@@ -4,7 +4,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="is-size-2">
-            Resume Part<strong>Coming soon!</strong>
+            Resume<strong>Coming soon!</strong>
           </div>
           <br />
         </div>
@@ -14,20 +14,20 @@
 </template>
 
 <script>
-const aboutDescription = 'My Resume';
+const resumeDescription = 'My Resume';
 const imagePath = 'http://www.titocodes.com/img/main-logo.687a6f89.png';
 
 export default {
   name: 'Resume',
   metaInfo: function () {
     return {
-      title: `About Page - ${this.$website_name}`,
+      title: `Resume - ${this.$website_name}`,
       link: [{ rel: 'canonical', href: this.$website_address }],
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: aboutDescription },
-        { property: 'og:description', content: aboutDescription },
+        { name: 'description', content: resumeDescription },
+        { property: 'og:description', content: resumeDescription },
         { property: 'og:title', content: `Resume Page- ${this.$website_name}` },
         {
           property: 'og:site_name',
@@ -42,7 +42,7 @@ export default {
           property: 'og:image',
           content: imagePath,
         },
-        { property: 'og:description', content: aboutDescription },
+        { property: 'og:description', content: resumeDescription },
         { name: 'twitter:card', content: 'summary' },
         {
           name: 'twitter:site',
@@ -51,10 +51,10 @@ export default {
         { name: 'twitter:title', content: `Resume Page- ${this.$website_name}` },
         {
           name: 'twitter:description',
-          content: aboutDescription,
+          content: resumeDescription,
         },
         { itemprop: 'name', content: `Resume Page- ${this.$website_name}` },
-        { itemprop: 'description', content: aboutDescription },
+        { itemprop: 'description', content: resumeDescription },
         {
           itemprop: 'image',
           content: imagePath,
