@@ -4,8 +4,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="is-size-2">
-            Resume Part
-            <strong>Coming soon!</strong>
+            Resume Part<strong>Coming soon!</strong>
           </div>
           <br />
         </div>
@@ -29,10 +28,10 @@ export default {
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: aboutDescription },
         { property: 'og:description', content: aboutDescription },
-        { property: 'og:title', content: `About Page- ${this.$website_name}` },
+        { property: 'og:title', content: `Resume Page- ${this.$website_name}` },
         {
           property: 'og:site_name',
-          content: `About Page- ${this.$website_name}`,
+          content: `Resume Page- ${this.$website_name}`,
         },
         { property: 'og:type', content: 'website' },
         {
@@ -49,12 +48,12 @@ export default {
           name: 'twitter:site',
           content: this.$website_address,
         },
-        { name: 'twitter:title', content: `About Page- ${this.$website_name}` },
+        { name: 'twitter:title', content: `Resume Page- ${this.$website_name}` },
         {
           name: 'twitter:description',
           content: aboutDescription,
         },
-        { itemprop: 'name', content: `About Page- ${this.$website_name}` },
+        { itemprop: 'name', content: `Resume Page- ${this.$website_name}` },
         { itemprop: 'description', content: aboutDescription },
         {
           itemprop: 'image',
