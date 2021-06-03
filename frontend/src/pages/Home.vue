@@ -55,7 +55,17 @@
             <a
               href="https://www.youtube.com/channel/UCaq_ors4apTVD-ERZHf93wA?view_as=subscriber"
               target="_blank"
-            >Youtube</a> channel!
+            >Youtube</a>!
+          </div>
+          <div class="subtitle is-size-5">
+             <span class="icon has-linkedin-color">
+                  <i class="fab fa-linkedin" aria-hidden="true"></i>
+             </span>
+            Connect with me in
+            <a
+              href="https://www.linkedin.com/in/rebie-estares-a9254498/"
+              target="_blank"
+            >LinkedIn</a>!
           </div>
         </div>
       </div>
@@ -143,5 +153,9 @@ a:hover {
 }
 .has-yt-color{
   color:#FF0000;
+}
+
+.has-linkedin-color{
+  color:#0a66c2;
 }
 </style>

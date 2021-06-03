@@ -5,7 +5,6 @@ import Home from './pages/Home.vue'
 import About from './pages/About.vue'
 import Project from './pages/Project.vue'
 import Privacy from './pages/Privacy.vue'
-import Resume from './pages/Resume.vue'
 import App from './App.vue'
 import Meta from 'vue-meta'
 import VueGtag from 'vue-gtag'
@@ -37,10 +36,6 @@ const routes = [
   {
     path: '/privacy-policy',
     component: Privacy,
-  },
-  {
-    path: '/resume',
-    component: Resume,
   }
 ]
 
