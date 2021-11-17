@@ -57,16 +57,6 @@
               target="_blank"
             >Youtube</a>!
           </div>
-          <div class="subtitle is-size-5">
-             <span class="icon has-linkedin-color">
-                  <i class="fab fa-linkedin" aria-hidden="true"></i>
-             </span>
-            Connect with me in
-            <a
-              href="https://www.linkedin.com/in/rebie-estares-a9254498/"
-              target="_blank"
-            >LinkedIn</a>!
-          </div>
         </div>
       </div>
     </section>
