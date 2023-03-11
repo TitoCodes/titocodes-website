@@ -13,12 +13,13 @@
           </h3>
           <div>
             <ul>
-              <li>- Estimating effort for client project proposals.</li>
-              <li>- (again) Estimating for cost estimates for client project proposals.</li>
-              <li>- Implementing new features.</li>
-              <li>- Bug fixing.</li>
-              <li>- Drafting solution architecture for projects.</li>
-              <li>- Communicating with clients and trying to understand what they want.</li>
+              <li>- Implementing new features</li>
+              <li>- Writing tests</li>
+              <li>- Bug fixing</li>
+              <li>- Creating CI/CD pipelines</li>
+              <li>- Transforming legacy programs into cutting edge maintainable projects</li>
+              <li>- Help transition organization into cloud</li>
+              <li>- Drafting solution architecture for projects</li>
             </ul>
             <br />
             <h3>
@@ -26,16 +27,13 @@
             </h3>
 
             <ul>
-              <li>- Live streaming about programming.</li>
-              <li>- Trying new web frameworks.</li>
-              <li>- Doing photography.</li>
-              <li>- Looking if my e-mail has new breaches.</li>
+              <li>- Creating videos about programming</li>
+              <li>- Trying new web frameworks</li>
+              <li>- Learning various cloud resources</li>
+              <li>- Exploring other programming languages</li>
+              <li>- Looking for ways to optimize my workflow</li>
               <li>- Practicing Videography</li>
-              <li>- Watching interesting series, thought provoking movies and coding tutorials.</li>
-              <li>- Reading self-help books.</li>
-              <li>- Training my dog named "Docker" ( He has an instagram).</li>
-              <li>- Playing Nintendo switch, PC "Master Race" games</li>
-              <li>- Dabbing into front-end frameworks and javascript development.</li>
+              <li>- Reading self-help books</li>
             </ul>
           </div>
         </div>
